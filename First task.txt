@@ -1,0 +1,32 @@
+Algorithm: Dot Product and Orthogonality Checker
+
+Function dot_product(v1, v2):INTEGEER
+VAR
+    v1:INTEGEER
+    v2:INTEGEER
+    ps:INTEGEER
+ BEGIN   
+    for i from 0 to length(v1) - 1:
+        ps = ps + v1[i] * v2[i]
+    return ps
+END
+
+
+Algorithm:check_orthogonality
+     Function check_orthogonality(vectors):INTEGEER
+     VAR
+     v1
+     v2
+     ps
+     
+    BEGIN     
+
+        ps = dot_product(v1, v2)
+        IF ps == 0 THEN
+         "Vectors v1 and v2 are orthogonal."
+        else:
+         "Vectors v1 and v2 are not orthogonal.
+         FIN IF
+         return ps
+    END            
+
